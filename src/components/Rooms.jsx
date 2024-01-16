@@ -96,7 +96,7 @@ function Rooms() {
         parmissions,
       })
       .then((post) => {
-        // navigate(`/chats/${post.$id}`);
+        navigate(`/chats/${post.$id}`);
         // console.log(post);
         if (post) {
           toast.success("Your room has been created successfully", {
