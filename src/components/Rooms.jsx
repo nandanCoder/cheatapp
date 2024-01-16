@@ -218,7 +218,7 @@ function Rooms() {
                     onClick={() => navigate(`/chats/${room.$id}`)}
                     color="primary"
                     radius="full">
-                    Cheat
+                    Chat
                     <MessageSquare />
                   </Button>
                   {room.$permissions.includes(
