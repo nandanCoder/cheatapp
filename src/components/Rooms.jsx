@@ -213,12 +213,14 @@ function Rooms() {
                 </CardBody>
                 <Divider />
                 <CardFooter className="">
-                  <Link to={`/chats/${room.$id}`} className="w-full">
-                    <Button className="w-full" color="primary" radius="full">
-                      Cheat
-                      <MessageSquare />
-                    </Button>
-                  </Link>
+                  <Button
+                    className="w-full"
+                    onClick={() => navigate(`/chats/${room.$id}`)}
+                    color="primary"
+                    radius="full">
+                    Cheat
+                    <MessageSquare />
+                  </Button>
                   {room.$permissions.includes(
                     `delete(\"user:${userData.$id}\")`
                   ) && (
